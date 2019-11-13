@@ -20,7 +20,6 @@ public class  ProductManagerImpl implements ProductManager {
         return Instance;
 
     }
-
     public List<Producte> productesOrdPreu() {
         List<Producte> lp=new ArrayList<>(listProductes.values());
         Collections.sort(lp, CMP_PRIZE);
@@ -49,8 +48,10 @@ public class  ProductManagerImpl implements ProductManager {
     }
 
     public void servirComanda() {
-        Pedido p = this.Comandas.remove();
-        this.Usuarios.get(p.getNombre()).addPedido(p);
+        if (this.Comandas.size()!=0) {
+            Pedido p = this.Comandas.remove();
+            this.Usuarios.get(p.getNombre()).addPedido(p);
+        }
     }
 
     public Queue<Pedido> getComandas() {

@@ -32,16 +32,16 @@ public class ProductManagerImplTest {
         productManager.setListProductes(listProductes);
 
         //Pedidos
-        Ppere.CreatePL(listProductes.get("CocaCola"), 2, listProductes);
-        Ppere.CreatePL(listProductes.get("Bocata"), 1, listProductes);
-        Pjuanjo.CreatePL(listProductes.get("Croissant"), 5, listProductes);
+        Ppere.CreatePL("CocaCola", 2, listProductes);
+        Ppere.CreatePL("Bocata", 1, listProductes);
+        Pjuanjo.CreatePL("Croissant", 5, listProductes);
         queue.add(Ppere);
         queue.add(Pjuanjo);
     }
 
     @After
     public void tearDown() {
-        ProductManagerImpl.getInstance().clear()
+        ProductManagerImpl.getInstance().clear();
     }
 
     @Test

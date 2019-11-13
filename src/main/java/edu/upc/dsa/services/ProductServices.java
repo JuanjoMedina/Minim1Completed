@@ -33,7 +33,7 @@ public class ProductServices {
     }
 
     @GET
-    @ApiOperation(value = "get all Products", notes = "asdasd")
+    @ApiOperation(value = "Get all Products", notes = "Te da todos los productos")
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "Successful", response = Producte.class, responseContainer="List"),
     })
@@ -45,24 +45,55 @@ public class ProductServices {
 
         GenericEntity<List<Producte>> entity = new GenericEntity<>(products){};
         return Response.status(201).entity(entity).build()  ;
-
     }
-    @GET
-    @ApiOperation(value = "get all Products del manager!!!!!", notes = "asdasd")
+
+    @POST
+    @ApiOperation(value = "create a new pedido", notes = "holi")
     @ApiResponses(value = {
-            @ApiResponse(code = 201, message = "Successful", response = Producte.class, responseContainer="List"),
+            @ApiResponse(code = 201, message = "Successful", response=Pedido.class),
+            @ApiResponse(code = 500, message = "Validation Error")
+
     })
-    @Path("/")
+
+    @Path("/comandas")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response newComanda(Pedido p) {
+        if (p.getNombre()==null || p.getLiniaPedido()==null)  return Response.status(500).entity(p).build();
+        this.pm.AnotarComanda(p);
+        for (int i=0;i<p.getLiniaPedido().size();i++) {
+            if (ProductManagerImpl.getInstance().getListProductes().get(p.getLiniaPedido().get(i).getProducte()) == null)
+                return Response.status(500).entity(p).build();
+            else
+                pm.getListProductes().get(p.getLiniaPedido().get(i).getProducte()).incrCantidad(p.getLiniaPedido().get(i).getCantidad());
+
+        }
+        return Response.status(201).entity(p).build();
+    }
+
+
+    @GET
+    @ApiOperation(value = "Ver Comanadas", notes = "Vas a ver las comandasssssss")
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Successful", response = Pedido.class, responseContainer="List"),
+    })
+    @Path("/comandas")
     @Produces(MediaType.APPLICATION_JSON)
     public Response manager() {
-
-        List<Producte> manager =new LinkedList<Producte>();
-        manager.add(new Producte("products",0,0));
-        manager.add(new Producte("manager",0,0)); //(Arrays.asList("products","manager"));
-
-        GenericEntity<List<Producte>> entity = new GenericEntity<List<Producte>>(manager){};
+        GenericEntity<Queue<Pedido>> entity = new GenericEntity<>(pm.getComandas()){};
         return Response.status(201).entity(entity).build()  ;
 
+    }
+
+    @DELETE
+    @ApiOperation(value = "Servir Comanda", notes = "Sirve la ultima comanda")
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Successful"),
+            @ApiResponse(code = 404, message = "No comandas left")
+    })
+    @Path("/servir")
+    public Response SC() {
+        this.pm.servirComanda();
+        return Response.status(201).build();
     }
 /*
     @GET
@@ -79,21 +110,7 @@ public class ProductServices {
         else  return Response.status(201).entity(t).build();
     }
 
-    @DELETE
-    @ApiOperation(value = "delete a Track", notes = "asdasd")
-    @ApiResponses(value = {
-            @ApiResponse(code = 201, message = "Successful"),
-            @ApiResponse(code = 404, message = "Track not found")
-    })
-    @Path("/{id}")
-    public Response deleteTrack(@PathParam("id") String id) {
-        Track t = this.pm.getTrack(id);
-        if (t == null) return Response.status(404).build();
-        else this.pm.deleteTrack(id);
-        return Response.status(201).build();
-    }
-
-    @PUT
+   @PUT
     @ApiOperation(value = "update a Track", notes = "asdasd")
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "Successful"),
@@ -109,23 +126,8 @@ public class ProductServices {
         return Response.status(201).build();
     }
 
-
-
-    @POST
-    @ApiOperation(value = "create a new Track", notes = "asdasd")
-    @ApiResponses(value = {
-            @ApiResponse(code = 201, message = "Successful", response=Track.class),
-            @ApiResponse(code = 500, message = "Validation Error")
-
-    })
-
-    @Path("/")
-    @Consumes(MediaType.APPLICATION_JSON)
-    public Response newTrack(Track track) {
-
-        if (track.getSinger()==null || track.getTitle()==null)  return Response.status(500).entity(track).build();
-        this.pm.addTrack(track);
-        return Response.status(201).entity(track).build();
-    }
 */
+
+
+
 }

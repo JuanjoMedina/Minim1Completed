@@ -11,14 +11,14 @@ public class Producte  {
 
     }
     public Producte(String n,double p, int v ){
-        this.precio=p;
-        this.ventas=v;
-        this.nombre=n;
+        this.setPrecio(p);
+        this.setVentas(v);
+        this.setNombre(n);
     }
 
     protected Comparator<Producte> CMP_PRIZE = new Comparator<Producte>() {
         public int compare(Producte p1, Producte p2) {
-            return (int) (p1.precio - p2.precio);
+            return (int) (p1.getPrecio() - p2.getPrecio());
         }
     };
 
@@ -50,6 +50,6 @@ public class Producte  {
     }
 
     public void incrCantidad(int c){
-        this.ventas+=c;
+        this.setVentas(this.getVentas() + c);
     }
 }
