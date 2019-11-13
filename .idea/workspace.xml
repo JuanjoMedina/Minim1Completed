@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2bc4dd7-a76f-4111-adae-315c88df1e32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/PL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/ProductManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/ProductManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/ProductManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/models/Producte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/models/Producte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/services/ProductServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/services/ProductServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/upc/dsa/ProductManagerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/upc/dsa/ProductManagerImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/Pedido$PL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/Pedido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/ProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/ProductManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/ProductManagerImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/ProductManagerImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/ProductManagerImpl$CompararPrecio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/ProductManagerImpl$CompararPrecio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/ProductManagerImpl$CompararVentas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/ProductManagerImpl$CompararVentas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/ProductManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/ProductManagerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/models/Producte$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/models/Producte$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/models/Producte.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/models/Producte.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/services/ProductServices$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/services/ProductServices$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/services/ProductServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/services/ProductServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/upc/dsa/ProductManagerImplTest$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/upc/dsa/ProductManagerImplTest$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/upc/dsa/ProductManagerImplTest$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/upc/dsa/ProductManagerImplTest$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/upc/dsa/ProductManagerImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/upc/dsa/ProductManagerImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/upc/dsa/JSONServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/upc/dsa/JSONServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/upc/dsa/JSONServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/upc/dsa/JSONServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.upc.dsa.Main" />
       <module name="rest-example2" />
@@ -76,9 +59,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JSONServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-example2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.upc.dsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.upc.dsa" />
+      <option name="MAIN_CLASS_NAME" value="edu.upc.dsa.JSONServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.JSONServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -107,21 +106,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/upc/dsa/services/ProductServices.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/upc/dsa/services/ProductServices.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
