@@ -39,6 +39,11 @@ public class ProductManagerImplTest {
         queue.add(Pjuanjo);
     }
 
+    @After
+    public void tearDown() {
+        ProductManagerImpl.getInstance().clear()
+    }
+
     @Test
     public void testAnotarComanda() {
         //Funcion de anotar una comanda

@@ -9,4 +9,6 @@ public interface ProductManager {
     public void servirComanda();
     public List<Pedido> comandesPerUsuari(String isUser);
     public List<Producte> productesOrdVentes();
+
+    public void clear();
 }

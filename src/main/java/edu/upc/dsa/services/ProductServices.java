@@ -12,12 +12,11 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.lang.reflect.Array;
+import java.util.*;
 
-@Api(value = "/manager", description = "Endpoint to Track Service")
-@Path("/manager")
+@Api(value = "/", description = "Endpoint to Track Service")
+@Path("/")
 public class ProductServices {
 
     private ProductManager pm;
@@ -40,11 +39,28 @@ public class ProductServices {
     })
     @Path("/products")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getTracks() {
+    public Response getProducts() {
 
         List<Producte> products = new ArrayList<>(ProductManagerImpl.getInstance().getListProductes().values());
 
         GenericEntity<List<Producte>> entity = new GenericEntity<>(products){};
+        return Response.status(201).entity(entity).build()  ;
+
+    }
+    @GET
+    @ApiOperation(value = "get all Products del manager!!!!!", notes = "asdasd")
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Successful", response = Producte.class, responseContainer="List"),
+    })
+    @Path("/")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response manager() {
+
+        List<Producte> manager =new LinkedList<Producte>();
+        manager.add(new Producte("products",0,0));
+        manager.add(new Producte("manager",0,0)); //(Arrays.asList("products","manager"));
+
+        GenericEntity<List<Producte>> entity = new GenericEntity<List<Producte>>(manager){};
         return Response.status(201).entity(entity).build()  ;
 
     }

@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db5f34da-7fa0-4dad-bf12-07b41fed0acc" name="Default Changelist" comment="" />
+    <list default="true" id="b2bc4dd7-a76f-4111-adae-315c88df1e32" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/ProductManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/ProductManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/models/Producte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/models/Producte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/services/ProductServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/services/ProductServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/upc/dsa/ProductManagerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/upc/dsa/ProductManagerImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/rest-example2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/ProductManagerImpl$CompararVentas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/ProductManagerImpl$CompararVentas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/models/Producte.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/models/Producte.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/services/ProductServices$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/services/ProductServices$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/services/ProductServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/services/ProductServices.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1TNcwZKnSyAl3x1uL5S3YH37RJN" />
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Juanjo\Documents\Universidad\Curso 4\DSA\Minim1 entero\rest-example\src\test" />
-    </key>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1TShCPwYVGj1qw3Jl5SGpLYD8KB" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -32,7 +48,7 @@
       <module name="rest-example2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.upc.dsa.models.*" />
+          <option name="PATTERN" value="edu.upc.dsa.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -51,28 +67,23 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="db5f34da-7fa0-4dad-bf12-07b41fed0acc" name="Default Changelist" comment="" />
-      <created>1573304232992</created>
+      <changelist id="b2bc4dd7-a76f-4111-adae-315c88df1e32" name="Default Changelist" comment="" />
+      <created>1573459275470</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1573304232992</updated>
+      <updated>1573459275470</updated>
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/upc/dsa/services/ProductServices.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="products.get(2).nombre" />
-      </configuration>
-    </watches-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

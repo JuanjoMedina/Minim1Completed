@@ -33,6 +33,13 @@ public class  ProductManagerImpl implements ProductManager {
         return lp;
     }
 
+    @Override
+    public void clear() {
+        this.Comandas.clear();
+        this.listProductes.clear();
+        this.Usuarios.clear();
+    }
+
     public void AnotarComanda(Pedido p) {
         if (!Usuarios.containsKey(p.getNombre())) {
             Usuario user = new Usuario(p.getNombre());

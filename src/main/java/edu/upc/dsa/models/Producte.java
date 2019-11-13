@@ -24,9 +24,6 @@ public class Producte  {
 
     // Collections.sort(productos, CMP_PRIZE)
 
-    public double getVentas() {
-        return ventas;
-    }
 
     public double getPrecio() {
         return precio;
@@ -34,6 +31,18 @@ public class Producte  {
 
     public String getNombre() {
         return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getVentas() {
+        return ventas;
+    }
+
+    public void setVentas(int ventas) {
+        this.ventas = ventas;
     }
 
     public void setPrecio(double precio) {
